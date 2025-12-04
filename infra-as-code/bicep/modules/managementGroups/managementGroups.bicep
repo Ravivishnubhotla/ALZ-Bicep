@@ -39,39 +39,39 @@ param parTelemetryOptOut bool = false
 
 // Platform and Child Management Groups
 var varPlatformMg = {
-  name: '${parTopLevelManagementGroupPrefix}-platform${parTopLevelManagementGroupSuffix}'
-  displayName: 'Platform'
+  name: '${parTopLevelManagementGroupPrefix}-Platform${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Platform${parTopLevelManagementGroupSuffix}'
 }
 
 // Used if parPlatformMgAlzDefaultsEnable == true
 var varPlatformMgChildrenAlzDefault = {
-  connectivity: {
-    displayName: 'Connectivity'
+  Connectivity: {
+    displayName: '${parTopLevelManagementGroupPrefix}-Connectivity${parTopLevelManagementGroupSuffix}'
   }
-  identity: {
-    displayName: 'Identity'
+  Identity: {
+    displayName: '${parTopLevelManagementGroupPrefix}-Identity${parTopLevelManagementGroupSuffix}'
   }
-  management: {
-    displayName: 'Management'
+  Management: {
+    displayName: '${parTopLevelManagementGroupPrefix}-Management${parTopLevelManagementGroupSuffix}'
   }
-  security: {
-    displayName: 'Security'
+  Security: {
+    displayName: '${parTopLevelManagementGroupPrefix}-Security${parTopLevelManagementGroupSuffix}'
   }
 }
 
 // Landing Zones & Child Management Groups
 var varLandingZoneMg = {
-  name: '${parTopLevelManagementGroupPrefix}-landingzones${parTopLevelManagementGroupSuffix}'
-  displayName: 'Landing Zones'
+  name: '${parTopLevelManagementGroupPrefix}-Landingzones${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Landingzones${parTopLevelManagementGroupSuffix}'
 }
 
 // Used if parLandingZoneMgAlzDefaultsEnable == true
 var varLandingZoneMgChildrenAlzDefault = {
-  corp: {
-    displayName: 'Corp'
+  NonProd: {
+    displayName: '${parTopLevelManagementGroupPrefix}-NonProd${parTopLevelManagementGroupSuffix}'
   }
-  online: {
-    displayName: 'Online'
+  Prod: {
+    displayName: '${parTopLevelManagementGroupPrefix}-Prod${parTopLevelManagementGroupSuffix}'
   }
 }
 
@@ -91,14 +91,14 @@ var varPlatformMgChildrenUnioned = (parPlatformMgAlzDefaultsEnable && (!empty(pa
 
 // Sandbox Management Group
 var varSandboxMg = {
-  name: '${parTopLevelManagementGroupPrefix}-sandbox${parTopLevelManagementGroupSuffix}'
-  displayName: 'Sandbox'
+  name: '${parTopLevelManagementGroupPrefix}-Sandbox${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Sandbox${parTopLevelManagementGroupSuffix}'
 }
 
 // Decomissioned Management Group
 var varDecommissionedMg = {
-  name: '${parTopLevelManagementGroupPrefix}-decommissioned${parTopLevelManagementGroupSuffix}'
-  displayName: 'Decommissioned'
+  name: '${parTopLevelManagementGroupPrefix}-Decommissioned${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Decommissioned${parTopLevelManagementGroupSuffix}'
 }
 
 // Customer Usage Attribution Id
@@ -168,7 +168,7 @@ resource resDecommissionedMg 'Microsoft.Management/managementGroups@2023-04-01' 
 
 // Level 3 - Child Management Groups under Landing Zones MG
 resource resLandingZonesChildMgs 'Microsoft.Management/managementGroups@2023-04-01' = [for mg in items(varLandingZoneMgChildrenUnioned): if (!empty(varLandingZoneMgChildrenUnioned)) {
-  name: '${parTopLevelManagementGroupPrefix}-landingzones-${mg.key}${parTopLevelManagementGroupSuffix}'
+  name: '${parTopLevelManagementGroupPrefix}-Landingzones-${mg.key}${parTopLevelManagementGroupSuffix}'
   properties: {
     displayName: mg.value.displayName
     details: {
@@ -181,7 +181,7 @@ resource resLandingZonesChildMgs 'Microsoft.Management/managementGroups@2023-04-
 
 //Level 3 - Child Management Groups under Platform MG
 resource resPlatformChildMgs 'Microsoft.Management/managementGroups@2023-04-01' = [for mg in items(varPlatformMgChildrenUnioned): if (!empty(varPlatformMgChildrenUnioned)) {
-  name: '${parTopLevelManagementGroupPrefix}-platform-${mg.key}${parTopLevelManagementGroupSuffix}'
+  name: '${parTopLevelManagementGroupPrefix}-Platform-${mg.key}${parTopLevelManagementGroupSuffix}'
   properties: {
     displayName: mg.value.displayName
     details: {

@@ -67,10 +67,10 @@ var varLandingZoneMg = {
 
 // Used if parLandingZoneMgAlzDefaultsEnable == true
 var varLandingZoneMgChildrenAlzDefault = {
-  'Non Prod': {
+  NonProd: {
     displayName: 'Non Prod'
   }
-  'Prod': {
+  Prod: {
     displayName: 'Prod'
   }
 }

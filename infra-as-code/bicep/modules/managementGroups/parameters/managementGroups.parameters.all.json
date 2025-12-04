@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parTopLevelManagementGroupPrefix": {
-      "value": "alz"
+      "value": "MYFIRM"
     },
     "parTopLevelManagementGroupSuffix": {
-      "value": ""
+      "value": "MG"
     },
     "parTopLevelManagementGroupDisplayName": {
-      "value": "Azure Landing Zones"
+      "value": "MYFIRM CONSULTING LLC"
     },
     "parTopLevelManagementGroupParentId": {
       "value": ""

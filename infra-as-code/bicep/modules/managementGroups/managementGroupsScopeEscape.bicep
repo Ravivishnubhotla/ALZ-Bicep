@@ -39,8 +39,8 @@ param parTelemetryOptOut bool = false
 
 // Platform and Child Management Groups
 var varPlatformMg = {
-  name: '${parTopLevelManagementGroupPrefix}-platform${parTopLevelManagementGroupSuffix}'
-  displayName: 'Platform'
+  name: '${parTopLevelManagementGroupPrefix}-Platform${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Platform${parTopLevelManagementGroupSuffix}'
 }
 
 // Used if parPlatformMgAlzDefaultsEnable == true
@@ -61,17 +61,17 @@ var varPlatformMgChildrenAlzDefault = {
 
 // Landing Zones & Child Management Groups
 var varLandingZoneMg = {
-  name: '${parTopLevelManagementGroupPrefix}-landingzones${parTopLevelManagementGroupSuffix}'
-  displayName: 'Landing Zones'
+  name: '${parTopLevelManagementGroupPrefix}-Landingzones${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Landingzones${parTopLevelManagementGroupSuffix}'
 }
 
 // Used if parLandingZoneMgAlzDefaultsEnable == true
 var varLandingZoneMgChildrenAlzDefault = {
-  corp: {
-    displayName: 'Corp'
+  'Non Prod': {
+    displayName: 'Non Prod'
   }
-  online: {
-    displayName: 'Online'
+  'Prod': {
+    displayName: 'Prod'
   }
 }
 
@@ -113,14 +113,14 @@ var varPlatformMgChildrenUnioned = (parPlatformMgAlzDefaultsEnable && (!empty(pa
 
 // Sandbox Management Group
 var varSandboxMg = {
-  name: '${parTopLevelManagementGroupPrefix}-sandbox${parTopLevelManagementGroupSuffix}'
-  displayName: 'Sandbox'
+  name: '${parTopLevelManagementGroupPrefix}-Sandbox${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Sandbox${parTopLevelManagementGroupSuffix}'
 }
 
 // Decomissioned Management Group
 var varDecommissionedMg = {
-  name: '${parTopLevelManagementGroupPrefix}-decommissioned${parTopLevelManagementGroupSuffix}'
-  displayName: 'Decommissioned'
+  name: '${parTopLevelManagementGroupPrefix}-Decommissioned${parTopLevelManagementGroupSuffix}'
+  displayName: '${parTopLevelManagementGroupPrefix}-Decommissioned${parTopLevelManagementGroupSuffix}'
 }
 
 // Customer Usage Attribution Id

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parSubscriptionName": {
+      "value": "MYFIRM4-PROD-SUB-001"
+    },
+    "parSubscriptionBillingScope": {
+      "value": "/providers/Microsoft.Billing/billingAccounts/cdae2983-75a1-54ac-87d9-1fb3e272c8ad:134a8b88-367c-436a-af11-0781946bdce9_2019-05-31/billingProfiles/QHK6-GO27-BG7-PGB/invoiceSections/3LA3-FCPK-PJA-PGB"
+    },
+    "parTags": {
+      "value": {
+        "Owner": "ravi.vishnubhotla@outlook.com"
+      }
+    },
+    "parManagementGroupId": {
+      "value": "MYFIRM4-Landingzones-Prod-MG"
+    },
+    "parSubscriptionOwnerId": {
+      "value": "17ddcfd2-9404-46df-980d-7d15ee3feac7"
+    },
+    "parSubscriptionOfferType": {
+      "value": "Production"
+    },
+    "parTenantId": {
+      "value": "2d99b568-b74c-43af-bb3f-059449a16840"
+    }
+  }
+}

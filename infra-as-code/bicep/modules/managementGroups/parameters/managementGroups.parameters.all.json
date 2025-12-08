@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parTopLevelManagementGroupPrefix": {
-      "value": "MYFIRM4"
+      "value": "SMVLLC"
     },
     "parTopLevelManagementGroupSuffix": {
       "value": "-MG"
     },
     "parTopLevelManagementGroupDisplayName": {
-      "value": "MYFIRM4 CONSULTING LLC"
+      "value": "SMV CONSULTING LLC"
     },
     "parTopLevelManagementGroupParentId": {
       "value": ""

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parAssignableScopeManagementGroupId": {
-      "value": "MYFIRM4-MG"
+      "value": "SMVLLC-MG"
     },
     "parTelemetryOptOut": {
       "value": false

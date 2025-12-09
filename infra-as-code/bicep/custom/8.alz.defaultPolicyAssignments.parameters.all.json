@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parTopLevelManagementGroupPrefix": {
+      "value": "SMVLLC"
+    },
+    "parManagementGroupIdOverrides": {
+      "value": {}
+    },
+    "parTopLevelManagementGroupSuffix": {
+      "value": "-MG"
+    },
+    "parDdosEnabled": {
+      "value": false
+    },
+    "parPlatformMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneChildrenMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneMgConfidentialEnable": {
+      "value": false
+    },
+    "parLogAnalyticsWorkSpaceAndAutomationAccountLocation": {
+      "value": "eastus2"
+    },
+    "parLogAnalyticsWorkspaceResourceId": {
+      "value": "/subscriptions/5e50f866-3e00-4ffe-a9ad-a7f8ed0272cb/resourceGroups/smvllc-logging-rgrp-001/providers/Microsoft.OperationalInsights/workspaces/smvllc-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": "365"
+    },
+    "parLogAnalyticsWorkspaceResourceCategory": {
+      "value": "allLogs"
+    },
+    "parDataCollectionRuleVMInsightsResourceId": {
+      "value": "/subscriptions/5e50f866-3e00-4ffe-a9ad-a7f8ed0272cb/resourceGroups/smvllc-logging-rgrp-001/providers/Microsoft.Insights/dataCollectionRules/smvllc-ama-vmi-dcr"
+    },
+    "parDataCollectionRuleChangeTrackingResourceId": {
+      "value": "/subscriptions/5e50f866-3e00-4ffe-a9ad-a7f8ed0272cb/resourceGroups/smvllc-logging-rgrp-001/providers/Microsoft.Insights/dataCollectionRules/smvllc-ama-ct-dcr"
+    },
+    "parDataCollectionRuleMDFCSQLResourceId": {
+      "value": "/subscriptions/5e50f866-3e00-4ffe-a9ad-a7f8ed0272cb/resourceGroups/smvllc-logging-rgrp-001/providers/Microsoft.Insights/dataCollectionRules/smvllc-ama-mdfcsql-dcr"
+    },
+    "parUserAssignedManagedIdentityResourceId": {
+      "value": "/subscriptions/5e50f866-3e00-4ffe-a9ad-a7f8ed0272cb/resourcegroups/smvllc-logging-rgrp-001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/smvllc-umi-identity"
+    },
+    "parAutomationAccountName": {
+      "value": "smvllc-automation-account"
+    },
+    "parMsDefenderForCloudEmailSecurityContact": {
+      "value": "ravi.vishnubhotla2@gmail.com"
+    },
+    "parDdosProtectionPlanId": {
+      "value": "/subscriptions/76f61789-c9fe-4f0d-b98b-d7a27030ee3a/resourceGroups/smvllc-use2-connectivity-rgrp001/providers/Microsoft.Network/ddosProtectionPlans/smvllc-ddos-plan"
+    },
+    "parPrivateDnsResourceGroupId": {
+      "value": "/subscriptions/76f61789-c9fe-4f0d-b98b-d7a27030ee3a/resourceGroups/smvllc-use2-connectivity-rgrp001"
+    },
+    "parPrivateDnsZonesLocation": {
+      "value": "eastus2"
+    },
+    "parPrivateDnsZonesNamesToAuditInCorp": {
+      "value": []
+    },
+    "parPolicyAssignmentsToDisableEnforcement": {
+      "value": []
+    },
+    "parDisableAlzDefaultPolicies": {
+      "value": false
+    },
+    "parVmBackupExclusionTagName": {
+      "value": ""
+    },
+    "parVmBackupExclusionTagValue": {
+      "value": []
+    },
+    "parExcludedPolicyAssignments": {
+      "value": []
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}

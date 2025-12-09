@@ -39,7 +39,7 @@
       "value": "smvllc-umi-identity"
     },
     "parUserAssignedManagedIdentityLocation": {
-      "value": "eastus"
+      "value": "eastus2"
     },
     "parAutomationAccountEnabled": {
       "value": false

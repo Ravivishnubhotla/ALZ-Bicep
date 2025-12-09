@@ -9,7 +9,7 @@
       "value": "smvllc"
     },
     "parHubNetworkName": {
-      "value": "smvllc-hub-use2"
+      "value": "smvllc-hub-eastus2"
     },
     "parHubNetworkAddressPrefix": {
       "value": "10.20.0.0/16"
@@ -17,25 +17,25 @@
     "parSubnets": {
       "value": [
         {
-          "name": "smvllc-hub-subnet-bastion",
+          "name": "AzureBastionSubnet",
           "ipAddressRange": "10.20.0.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         },
         {
-          "name": "smvllc-hub-subnet-gateway",
+          "name": "GatewaySubnet",
           "ipAddressRange": "10.20.254.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         },
         {
-          "name": "smvllc-hub-subnet-firewall",
+          "name": "AzureFirewallSubnet",
           "ipAddressRange": "10.20.255.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         },
         {
-          "name": "smvllc-hub-subnet-firewall-mgmt",
+          "name": "AzureFirewallManagementSubnet",
           "ipAddressRange": "10.20.253.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
@@ -55,7 +55,7 @@
       "value": "-PublicIP"
     },
     "parAzBastionEnabled": {
-      "value": true
+      "value": false
     },
     "parAzBastionName": {
       "value": "smvllc-bastion"
@@ -67,7 +67,7 @@
       "value": false
     },
     "parAzBastionNsgName": {
-      "value": "smvllc-hub-connectivity-nsg-bastionSubnet"
+      "value": "nsg-AzureBastionSubnet"
     },
     "parDdosEnabled": {
       "value": false
@@ -76,16 +76,16 @@
       "value": "smvllc-ddos-plan"
     },
     "parAzFirewallEnabled": {
-      "value": true
+      "value": false
     },
     "parAzFirewallName": {
-      "value": "asmvllc-azfw-use2"
+      "value": "smvllc-azfw-eastus2"
     },
     "parAzFirewallPoliciesName": {
-      "value": "smvllc-azfwpolicy-use2"
+      "value": "smvllc-azfwpolicy-eastus2"
     },
     "parAzFirewallTier": {
-      "value": "Basic"
+      "value": "Standard"
     },
     "parAzFirewallIntelMode": {
       "value": "Alert"
@@ -100,13 +100,13 @@
       "value": []
     },
     "parAzFirewallDnsProxyEnabled": {
-      "value": true
+      "value": false
     },
     "parAzFirewallDnsServers": {
       "value": []
     },
     "parHubRouteTableName": {
-      "value": "smvllc-hub-routetable-eastus"
+      "value": "smvllc-hub-routetable-eastus2"
     },
     "parDisableBgpRoutePropagation": {
       "value": false
@@ -192,49 +192,49 @@
     "parGlobalResourceLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parVirtualNetworkLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parBastionLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parDdosLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parAzureFirewallLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parHubRouteTableLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parPrivateDNSZonesLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     },
     "parVirtualNetworkGatewayLock": {
       "value": {
         "kind": "None",
-        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+        "notes": "This lock was created by the smvllc Bicep Hub Networking Module."
       }
     }
   }

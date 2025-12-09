@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parTopLevelManagementGroupPrefix": {
+      "value": "SMVLLC"
+    },
+    "parTopLevelManagementGroupSuffix": {
+      "value": "-MG"
+    },
+    "parLandingZoneMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parPlatformMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneMgConfidentialEnable": {
+      "value": false
+    },
+    "parLogAnalyticsWorkspaceResourceId": {
+      "value": "/subscriptions/5e50f866-3e00-4ffe-a9ad-a7f8ed0272cb/resourcegroups/smvllc-logging-rgrp-001/providers/microsoft.operationalinsights/workspaces/smvllc-log-analytics"
+    },
+    "parDiagnosticSettingsName": {
+      "value": "toLa"
+    },
+    "parLandingZoneMgChildren": {
+      "value": []
+    },
+    "parPlatformMgChildren": {
+      "value": []
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}

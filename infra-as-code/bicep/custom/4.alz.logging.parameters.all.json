@@ -1,0 +1,132 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parLogAnalyticsWorkspaceName": {
+      "value": "smvllc-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceLocation": {
+      "value": "eastus2"
+    },
+    "parLogAnalyticsWorkspaceSkuName": {
+      "value": "PerGB2018"
+    },
+    "parLogAnalyticsWorkspaceCapacityReservationLevel": {
+      "value": 100
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": 365
+    },
+    "parLogAnalyticsWorkspaceSolutions": {
+      "value": [
+        "SecurityInsights",
+        "ChangeTracking"
+      ]
+    },
+    "parDataCollectionRuleVMInsightsExperience": {
+      "value": "PerfAndMap"
+    },
+    "parDataCollectionRuleVMInsightsName": {
+      "value": "smvllc-ama-vmi-dcr"
+    },
+    "parDataCollectionRuleChangeTrackingName": {
+      "value": "smvllc-ama-ct-dcr"
+    },
+    "parDataCollectionRuleMDFCSQLName": {
+      "value": "smvllc-ama-mdfcsql-dcr"
+    },
+    "parUserAssignedManagedIdentityName": {
+      "value": "smvllc-umi-identity"
+    },
+    "parUserAssignedManagedIdentityLocation": {
+      "value": "eastus"
+    },
+    "parAutomationAccountEnabled": {
+      "value": false
+    },
+    "parLogAnalyticsWorkspaceLinkAutomationAccount": {
+      "value": false
+    },
+    "parAutomationAccountName": {
+      "value": "smvllc-automation-account"
+    },
+    "parAutomationAccountLocation": {
+      "value": "eastus2"
+    },
+    "parAutomationAccountUseManagedIdentity": {
+      "value": true
+    },
+    "parAutomationAccountPublicNetworkAccess": {
+      "value": true
+    },
+    "parTags": {
+      "value": {
+        "Environment": "Live"
+      }
+    },
+    "parLogAnalyticsWorkspaceTags": {
+      "value": {
+        "Environment": "Live"
+      }
+    },
+    "parAutomationAccountTags": {
+      "value": {
+        "Environment": "Live"
+      }
+    },
+    "parLogAnalyticsLinkedServiceAutomationAccountName": {
+      "value": "Automation"
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    },
+    "parGlobalResourceLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parAutomationAccountLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parLogAnalyticsWorkspaceLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parDataCollectionRuleVMInsightsLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parDataCollectionRuleChangeTrackingLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parDataCollectionRuleMDFCSQLLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parSecurityInsightsOnboardingLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parChangeTrackingSolutionLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    }
+  }
+}
